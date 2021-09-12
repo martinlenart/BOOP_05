@@ -2,6 +2,27 @@
 
 namespace BOOP_05_02
 {
+    #region Exercise
+    public enum PlayingCardColor
+    {
+        Clubs, Diamonds, Hearts, Spades         // Poker suit order, Spades highest
+    }
+    public enum PlayingCardValue
+    {
+        Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+        Knight, Queen, King, Ace                // Poker Value order
+    }
+    public struct PlayingCardStruct
+    {
+        public PlayingCardColor Color;
+        public PlayingCardValue Value;
+    }
+    public class PlayingCardClass
+    {
+        public PlayingCardColor Color;
+        public PlayingCardValue Value;
+    }
+    #endregion
     class Program
     {
         public struct StructPoint
@@ -51,3 +72,19 @@ namespace BOOP_05_02
         }
     }
 }
+//Exercises:
+//1.    Declare a variable as an array of type int with 5 elements. Initialize the array with values.
+//      Declare another variable as an array of type int with and make it a shallow copy of the first array 
+//
+//2.	Declare a variable, cardDeckStruct1, as an array of type PlayingCardStruct with 5 elements.
+//      Initialize it to 5 different playing cards. Declare another variable, cardDeckStruct2
+//3.	Are cardDeckStruct1 of type value type or reference type?
+//4.	Are the element of cardDeckStruct1 of type value type or reference type?
+//5.	Assign cardDeckStruct2 a shallow copy of cardDeckStruct1.
+//
+//6.	Declare a variable, cardDeckClass1, as an array of type PlayingCardClass with 5 elements.
+//      Initialize it to 5 different playing cards. Declare a variable, cardDeckClass2
+//7.	Are cardDeckClass1 of type value type or reference type?
+//8.	Are the element of cardDeckClass1 of type value type or reference type?
+//9.	Assign cardDeckClass2 a deep copy of cardDeckClass1.
+

@@ -2,6 +2,28 @@
 
 namespace BOOP_05_01
 {
+    #region Exercise
+    public enum PlayingCardColor
+    {
+        Clubs, Diamonds, Hearts, Spades         // Poker suit order, Spades highest
+    }
+    public enum PlayingCardValue
+    {
+        Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+        Knight, Queen, King, Ace                // Poker Value order
+    }
+    public struct PlayingCardStruct
+    {
+        public PlayingCardColor Color;
+        public PlayingCardValue Value;
+    }
+    public class PlayingCardClass
+    {
+        public PlayingCardColor Color;
+        public PlayingCardValue Value;
+    }
+    #endregion
+
     class Program
     {
         public struct Point
@@ -45,3 +67,13 @@ namespace BOOP_05_01
         }
     }
 }
+//Exercises:
+//1.    Declare five variables, of types int, bool, float, long, decimal. Assign the variables values.
+//      Draw the memory structure diagram of the variables and the assignments. 
+//2.	Discuss in the group and decide if the variable memory allocated is on the stack or on the heap?
+//3.	Declare a variable of type PlayingCardColor and one Variable of type PlayingCardStruct (value type in region Exercise).
+//      Assign the variables values. Draw the memory structure diagram of the variables and the assignments. 
+//4.	Are the variables memory allocated on the stack on on the heap.
+//5.	Declare a variable of type PlayingCardClass (reference type) and draw the memory structure diagram.
+//      Identify what is Stack or Heap.
+

@@ -2,6 +2,22 @@
 
 namespace BOOP_05_08
 {
+    #region Exercise
+    public enum PlayingCardColor
+    {
+        Clubs, Diamonds, Hearts, Spades         // Poker suit order, Spades highest
+    }
+    public enum PlayingCardValue
+    {
+        Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+        Knight, Queen, King, Ace                // Poker Value order
+    }
+    public struct PlayingCard
+    {
+        public PlayingCardColor Color;
+        public PlayingCardValue Value;
+    }
+    #endregion
     class Program
     {
         static void Main(string[] args)
@@ -37,9 +53,9 @@ namespace BOOP_05_08
             }
         }
     }
-    // Exercise
-    // 1. Print out the array at ViewPoint A together with i and j and see how the algorithm works
-    // 2. Implement SelectionSort in descending sort order
-    // 3. Implement BubbleSort with a boolean parameter specifying ascening or descending sort order
-    // 4. Implement BubbleSort for an array of type "class Rectangle" sorted by Area in descending and ascending order 
 }
+//Exercises:
+//1.    Use the debugger to step through the BubbleSort algorithm and follow the sorting process.
+//      Print out the array at ViewPoint A together with i and j and see how the algorithm works
+//      Draw the changes on a piece of paper so you understand the algorithm.
+//2.    Implement BubbleSort for an array of type "struct PlayingCard" sorted by Value in descending

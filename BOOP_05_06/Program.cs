@@ -32,3 +32,5 @@ namespace BOOP_05_06
         }
     }
 }
+//Exercises:
+//1.    Rewrite the code from BOOP_05_04 using TryXXX pattern instead of try-catch-finally pattern.
