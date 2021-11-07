@@ -36,6 +36,32 @@ namespace BOOP_05_02
 
         static void Main(string[] args)
         {
+
+            StructPoint sp1 = new StructPoint { X = 3, Y = 10 };
+            StructPoint sp2 = new StructPoint { X = 30, Y = 100 };
+
+            sp2 = sp1;
+            Console.WriteLine($"X: {sp2.X} Y: {sp2.Y}"); // 3, 10
+
+            sp1.X = 7;
+            sp1.Y = 17;
+            Console.WriteLine($"X: {sp1.X} Y: {sp1.Y}"); // 7, 17
+            Console.WriteLine($"X: {sp2.X} Y: {sp2.Y}"); // 3, 10
+
+            Console.WriteLine();
+            ClassPoint cp1 = new ClassPoint { X = 3, Y = 10 };
+            ClassPoint cp2 = new ClassPoint { X = 30, Y = 100 };
+
+            cp2 = new ClassPoint { X = cp1.X, Y = cp1.Y };  // Deep copy
+            Console.WriteLine($"X: {cp2.X} Y: {cp2.Y}"); // 3, 10
+            
+            cp1.X = 7;
+            cp1.Y = 17;
+            Console.WriteLine($"X: {cp1.X} Y: {cp1.Y}"); // 7, 17
+            Console.WriteLine($"X: {cp2.X} Y: {cp2.Y}"); // 3, 10
+
+            Console.WriteLine();
+            Console.WriteLine();
             // Arrays of Value Type
             StructPoint[] structArr = { new StructPoint { X = 1, Y = 1 }, new StructPoint { X = 2, Y = 2 } };
             int[] intArr = { 1, 2, 3, 4 };

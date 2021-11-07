@@ -37,7 +37,7 @@ namespace BOOP_05_01
             
             for (int i=0; i<ar1.Length; i++)
             {
-                var title1 = $"{nameof(ar1)}[{i}]";
+                var title1 = $"{nameof(ar1)}[{i}]"; 
                 Print(title1, ar1[i].X, ar1[i].Y);
 
                 Point[] ar2 = { new Point { X = 1, Y = 1 }, new Point { X = 2, Y = 2 } };
